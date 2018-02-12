@@ -1,6 +1,9 @@
 #plot readl time rate for tri amgular arbitrage
 
 # 1st trial usd ==> btc ==> eth ==> usd
+# run over 2000 cycles
+#over line at y=0 is the point you can make profit
+
 import gdax
 import matplotlib.pyplot as plt
 import time
