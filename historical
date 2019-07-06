@@ -1,0 +1,14 @@
+import cbpro
+import matplotlib.pyplot as plt
+public_client = cbpro.PublicClient()
+import time
+import numpy as np
+
+his = public_client.get_product_historic_rates('BTC-USD', granularity=300)
+his = np.asarray(his)
+
+y = his[:,1]
+y = y[::-1]
+
+plt.plot(y)
+plt.show()
